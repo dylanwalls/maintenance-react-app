@@ -36,3 +36,97 @@
     transform: rotate(360deg);
   }
 }
+
+.inspection-details-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Adjust the column widths as needed */
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.detail-label {
+  font-weight: bold;
+  text-transform: capitalize; /* Makes the labels easier to read */
+  color: #333;
+  margin-right: 10px; /* Ensures spacing between label and value */
+}
+
+.detail-value {
+  text-align: left;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .details-grid {
+    grid-template-columns: 1fr; /* Stacks the labels and values on smaller screens */
+  }
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #221e5a; /* light gray background */
+  padding: 10px 20px; /* padding around the entire navbar */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */
+  display: flex; /* ensures the links are aligned in a row */
+  justify-content: flex-start; /* aligns links to the left */
+}
+
+.navbar-link {
+  text-decoration: none; /* removes underline from links */
+  color: #ffffff; /* bootstrap's primary blue */
+  font-size: 24px; /* larger text for better readability */
+  margin-right: 15px; /* space between multiple links */
+}
+
+/* Styles for navigation links */
+.link-style {
+  text-decoration: none; /* Removes underline from all links */
+  color: black; /* Sets text color for the links */
+}
+
+/* Styles for each list item */
+.list-item-style {
+  background-color: #f0f0f0; /* Light grey background for each item */
+  margin: 5px 0; /* Margin between items */
+  padding: 10px; /* Padding inside each item */
+  border-radius: 5px; /* Rounded corners for aesthetics */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  cursor: pointer; /* Changes the mouse cursor to a pointer to indicate it's clickable */
+}
+
+/* Styles for data within each list item */
+.data-style {
+  margin-bottom: 5px; /* Space between rows of data */
+}
+
+/* Style for incomplete inspections */
+.list-item-style-incomplete {
+  background-color: #ffedd5; /* Light orange background for incomplete items */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+/* Style for completed inspections */
+.list-item-style-complete {
+  background-color: #e9ecef; /* Grey background for completed items */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  color: #6c757d; /* Dim the text color slightly */
+}
+
+
