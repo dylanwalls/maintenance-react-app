@@ -9,7 +9,7 @@ const Homepage = ({ inspections }) => {
 
   return (
     <div>
-      <h1>Inspections Overview</h1>
+      <h1>All Inspections</h1>
       <ul style={{ listStyleType: 'none', padding: 0 }}>
         {sortedInspections.map((inspection, index) => (
           <Link to={`/details/${inspection.id}`} key={index} className="link-style">
